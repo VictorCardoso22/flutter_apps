@@ -1,0 +1,19 @@
+body: Text("Conteudo"),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
+      // bottomNavigationBar: BottomNavigationBar(items: [],),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.orange,
+        foregroundColor: Colors.white,
+        elevation: 6,
+        // mini: true,
+        child: Icon(Icons.add),
+        onPressed: () {
+          print("Botão pressionado");
+        },
+      ),
+      bottomNavigationBar: BottomAppBar(
+        shape: CircularNotchedRectangle(),
+        child: Row(
+          children: [IconButton(onPressed: () {}, icon: Icon(Icons.add))],
+        ),
+      ),
